@@ -24,7 +24,7 @@ scrollbar {
   background: @window_bg_color;
   padding: 40px;
   border-radius: 32px;
-  border: 2px solid rgba(0, 0, 0, 0.36);
+  border: 0px solid rgba(0, 0, 0, 0.36);
 }
 
 .preview-box {
