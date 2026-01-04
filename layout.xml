@@ -112,11 +112,30 @@
               </object>
             </child>
             <child>
-              <object class="GtkLabel" id="Keybinds">
+              <object class="GtkBox" id="Keybinds">
+                <property name="hexpand">true</property>
+                <property name="margin-top">10</property>
                 <style>
-                  <class name="keybind-hints"></class>
+                  <class name="keybinds"></class>
                 </style>
-                <property name="xalign">1</property>
+                <child>
+                  <object class="GtkBox" id="GlobalKeybinds">
+                    <property name="spacing">10</property>
+                    <style>
+                      <class name="global-keybinds"></class>
+                    </style>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkBox" id="ItemKeybinds">
+                    <property name="hexpand">true</property>
+                    <property name="halign">end</property>
+                    <property name="spacing">10</property>
+                    <style>
+                      <class name="item-keybinds"></class>
+                    </style>
+                  </object>
+                </child>
               </object>
             </child>
           </object>
